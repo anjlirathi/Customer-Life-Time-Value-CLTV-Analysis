@@ -29,6 +29,9 @@ print(most_profitable_channels)
 
 #Calculate the Average Purchase Value:
 
+data['revenue'].sum()
+data['customer_id'].nunique()
+
 data['Avg Purchase Value'] = data['revenue']/data['customer_id'].nunique()
 print(data['Avg Purchase Value'])
 
